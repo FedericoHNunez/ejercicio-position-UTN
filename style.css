@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* variables */
+:root {
+    --font-principal: 'DM Sans', sans-serif;
+    --font_size_large: 16px;
+    --font_size_medium: 14px;
+    --font_size_small: 12px;
+    --font_weight_light: 300;
+    --font_weight_regular: 400;
+    --font_weight_medium: 600;
+    --font_color_primary: #39393b;
+    --font_color_secondary: #8b8b8c;
+    --background_color_primary: #683ee6;
+}
+
+/* normalization */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global styles */
+body {
+    font-size: 16px;
+    font-family: var(--font-principal);
+
+}
+
+a,
+button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* header */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.hostinger--header{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 24px;
+
+}
+.hostinger--header--left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 32px;
+}
+.hostinger--header--left button{
+    color: var(--font_color_primary);
+    font-size: var(--font_size_large);
+    font-weight: var(--font_weight_regular);
+}
+
+.hostinger--navegation{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.hostinger--navegation div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hostinger--navegation button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;}
+
+
+.hostinger--header--right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    font-weight: var(--font_weight_medium);
+}   
+.hostinger--header--right div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 12px
+}
+
+.hostinger--header--right a{
+    color: var(--font_color_primary);
+    font-size: var(--font_size_large);
+}
+
+.hostinger--navegation button:hover,
+.hostinger--header--right a:hover{
+    color: var(--font_color_secondary);
+    transition: color 0.3s ease-in-out; 
+    
+}
+.hostinger--header__flag{   
+    width: 32px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.hostinger--login{
+    border: solid 1px var(--font_color_secondary);
+    border-radius: 8px;
+    padding: 11px 15px;
+ 
+}
+.hostinger--login:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #f7f7f7; 
+    color: #000; 
+
+}
+
+main{
+    height: 200vh;
+    background-color: #8b8b8c;
+}
+
+/* kodee button */
+.kodee--button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--background_color_primary);
+    border-radius: 100px;
+    outline: 1px solid white;
+    color: white;
+    margin: 4px;
+    padding: 8px 16px;
+    font-size: var(--font_size_medium);
+    font-weight: var(--font_weight_medium);
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.kodee--button:hover{       
+    background-color:#5231b8;
+    transition: 0.3s ease-in-out;
+}
