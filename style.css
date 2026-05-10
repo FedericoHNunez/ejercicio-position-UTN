@@ -44,7 +44,6 @@ header{
 }
 
 .hostinger--header{
-  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -117,8 +116,8 @@ header{
     border: solid 1px var(--font_color_secondary);
     border-radius: 8px;
     padding: 11px 15px;
- 
 }
+
 .hostinger--login:hover{
     transition: 0.5s ease-in-out;
     background-color: #f7f7f7; 
