@@ -230,7 +230,13 @@ header{
     border-bottom: none;
 }
 
-
+.kodee--services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+}
 
 .kodee--services--button {
         border: solid 1px #0000003f;
