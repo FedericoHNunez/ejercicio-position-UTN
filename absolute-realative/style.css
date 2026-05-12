@@ -13,6 +13,7 @@
     --font_color_primary: #39393b;
     --font_color_secondary: #8b8b8c;
     --background_color_primary: #683ee6;
+    --background_color_secondary:  #35129c ;    
 }
 
 /* normalization */
@@ -39,6 +40,25 @@ button {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.button--primary {
+    background-color: var(--background_color_primary);
+    color: white;
+    border-radius: 8px;
+    padding: 11px 47px;
+    font-size: var(--font_size_large);
+    font-weight: var(--font_weight_medium);
+    margin: 16px;
+}
+.button--primary:hover {
+    background-color: var(--background_color_secondary);
+    transition: 0.3s ease-in-out;
+}
+
+.background--container {
+background: #020024;
+background: linear-gradient(181deg,rgba(2, 0, 36, 1) 0%, rgba(104, 62, 230, 1) 8%, rgba(255, 255, 255, 1) 19%);
 }
 
 /* header */
@@ -164,7 +184,7 @@ header {
     width: 24px;
     top: 92%;
     left: 95%;
-    
+
 }
 
 .play--button:hover {
@@ -172,10 +192,6 @@ header {
     color: var(--font_color_secondary);
     background-color: white;
 }
-
-
-
-
 
 
 /* kodee button */
@@ -203,4 +219,68 @@ header {
 .kodee--button:hover {
     background-color: #5231b8;
     transition: 0.3s ease-in-out;
+}
+
+
+/*  */
+
+.ia--presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 80px 0 104px;
+    width: 736px;
+    font-weight: var(--font_size_small);
+    text-align: center;
+}
+
+.ia--presentation h2 {
+    margin: 0 auto;
+    font-size: 80px;
+    max-width: 500px;
+    font-weight: var(--font_weight_regular);
+}
+
+.ia--presentation h3 {
+    font-weight: var(--font_weight_regular);
+    font-size: var(--font_size_medium);
+    background-color: #e0e0e0;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+
+.benefice-ia--section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 104px;
+    gap: 80px;
+}
+
+.benefice-ia--container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: space-between;
+    justify-content: space-between;
+    align-items: center;
+    width: 378px;
+    height: 188px;
+    text-align: center;
+}
+
+.benefice-ia--container span {
+    color: white;
+    background-color: var(--background_color_primary);
+    border-radius: 10px;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
