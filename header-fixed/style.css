@@ -24,13 +24,11 @@
 
 /* global styles */
 
+
 body {
     font-size: 16px;
     font-family: var(--font-principal);
     height: 200vh;
-
-
-
 }
 
 a,
@@ -46,6 +44,9 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.1);
 }
 
 .hostinger--header{
@@ -56,7 +57,6 @@ header{
     padding: 21px 24px;
     background-color: #fff;
     width: 100%;
-    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
 
 }
 .hostinger--header--left{
@@ -64,6 +64,7 @@ header{
     flex-direction: row;
     justify-content: flex-start;
     gap: 32px;
+ 
 }
 .hostinger--header--left button{
     color: var(--font_color_primary);
@@ -96,6 +97,7 @@ header{
     align-items: center;
     gap: 32px;
     font-weight: var(--font_weight_medium);
+
 }   
 .hostinger--header--right div{
     display: flex;
