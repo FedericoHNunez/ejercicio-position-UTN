@@ -199,26 +199,28 @@ main{
     height: 48px;
 }
 
-
-
-.kodee--menu--options{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-   
-}
-
 .kodee--menu--options button{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     padding: 8px;
+    font-size: var(--font_size_medium);
+    width: 100%;
+    border-bottom: solid 1px #0000003f;
+}   
 
+.kodee--menu--options button:last-child {
+    border-bottom: none;
+}
+
+.kodee--menu--options button:hover{
+    background-color: #0000000c;
+    transition: 0.3s ease-in-out;
 }
 
 .kodee--navegation--button{
-        border: solid 1px #00000015;
+        border: solid 1px #0000003f;
         border-radius: 100px;
         padding: 8px 8px;
         margin: 4px;
@@ -228,8 +230,38 @@ main{
 }
 
 
-.kodee--alert{
+
+.kodee--legal{
     font-size: var(--font_size_tiny);
     text-align: center;
 }
 
+.kodee--form{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}   
+
+.kodee--form--textarea{
+    border: solid 1px #0000003f;
+    border-radius: 12px;
+    font-size: var(--font_size_medium);
+    color: var(--font_color_primary);
+    background-color: #ffffffa6;
+    resize:none;
+    width: 100%;
+    padding: 4px 4px 24px 4px;
+    font-size: va(--font_size_medium);
+   
+
+}
+.kodee--form--button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #0000000c;
+    color: var(--font_color_secondary);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
