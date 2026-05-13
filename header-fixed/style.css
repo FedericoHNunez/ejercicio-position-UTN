@@ -167,7 +167,7 @@ header{
     transition: 0.3s ease-in-out;
 }
 
-/* Kodee menu Area */
+/* Kodee box Area */
 
 .kodee--menu{
     background-color: #fff;
@@ -281,6 +281,8 @@ header{
     width: 30px;
     height: 30px;
 }
+
+
 .kodee--services--button:hover,
 .kodee--menu--options button:hover{
     background-color: #0000000c;
@@ -288,6 +290,7 @@ header{
 
 }
 
+/* para que el que esta seleccionado se vea diferente */
 .selected{
     background-color: #683ee633;
     color: var(--background_color_primary);
