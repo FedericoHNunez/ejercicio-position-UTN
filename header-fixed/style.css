@@ -24,6 +24,10 @@
 
 /* global styles */
 
+html, body{
+    overflow-x: hidden;
+}
+
 
 body {
     font-size: 16px;
@@ -248,6 +252,7 @@ header{
         font-weight: var(--font_weight_medium);
         color: var(--font_color_primary);
         background-color: #ffffffa6;
+        font-family: var(--font-principal);
 
 }
 
@@ -292,5 +297,5 @@ header{
     background-color: #683ee633;
     color: var(--background_color_primary);
     border-color: var(--background_color_primary);
-    transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
 }
